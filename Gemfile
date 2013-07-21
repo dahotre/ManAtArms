@@ -36,3 +36,26 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'bootstrap-sass'
+gem 'figaro'
+gem 'haml-rails'
+gem 'mongoid'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
+  gem 'html2haml'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+end
+
+group :production do
+  gem 'thin'
+end
+
+group :test do
+  gem 'minitest-spec-rails'
+  gem 'minitest-wscolor'
+end
+
